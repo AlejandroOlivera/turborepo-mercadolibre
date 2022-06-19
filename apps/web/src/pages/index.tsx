@@ -1,14 +1,16 @@
 import Link from "next/link";
+import Head from "next/head";
+import Layout from "../components/Layout";
+
 export default function Web() {
   return (
-    <div>
-      <h1>WEB</h1>
-      <Link href="/">
+    <>
+      <Head>
+        <title>Web</title>
+      </Head>
+      <Layout>
         <a>Home</a>
-      </Link>
-      <Link href="/perfil/perfil">
-        <a>Perfil</a>
-      </Link>
-    </div>
+      </Layout>
+    </>
   );
 }
